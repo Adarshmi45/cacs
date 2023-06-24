@@ -1,0 +1,220 @@
+/* Reset some default styles */
+html, body, ul {
+    margin: 0;
+    padding: 10;
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #030303;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  .logo-left,
+  .logo-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+  }
+  
+  .logo-left {
+    left: 50px;
+  }
+  
+  .logo-right {
+    right: 50px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  
+  /* Team Member Styles */
+  .member {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .member img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10%;
+    margin-right: 20px;
+  }
+  
+  .member .member-info {
+    flex-grow: 1;
+  }
+  
+  .member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Team Member Colors */
+
+  
+  .member.president {
+    background-color: #c7ecee;
+  }
+  
+  .member.vice-president {
+    background-color: #c7ecee;
+  }
+  
+  .member.general-secretary {
+    background-color: #c7ecee;
+  }
+  
+  .member.secretary.finance {
+    background-color: #c7ecee;
+  }
+  
+  .member.secretary.pr {
+    background-color: #c7ecee;
+  }
+  
+  .member.secretary.marketing {
+    background-color: #c7ecee;
+  }
+  
+  .member.secretary.logistic {
+    background-color: #c7ecee;
+  }
+  
+  .member.secretary.technical {
+    background-color: #c7ecee;
+  }
+  
+  .member.secretary.decor {
+    background-color: #c7ecee;
+  }
+  
+  /* Team Member Text Styles */
+  .member h4 {
+    font-size: 22px;
+    margin-bottom: 7px;
+    padding: auto;
+  }
+  
+  .member p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: auto;
+  }
+  
+  /* Team Member Hover Styles */
+  .member:hover h4,
+  .member:hover p {
+    color: #ff1997;
+  }
+  
+  /* Largest President Box */
+  .member.president.largest {
+    flex-grow: 2;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .member {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .member img {
+      margin: 0 auto;
+    }
+  
+    .member .member-info {
+      margin-top: 10px;
+    }
+  }
+  
+  #past-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #slideshow {
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 240px; /* Center the slideshow horizontally */
+  }
+  
+  #slideshow img {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #slideshow img.active {
+    opacity: 1;
+  }
+  
+  
+  #clubs ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  #contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: #030303;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  #contact div {
+    width: 48%;
+    background-color: #030303;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  
